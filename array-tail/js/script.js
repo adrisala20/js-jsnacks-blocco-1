@@ -17,6 +17,8 @@ let sceltaUtente = document.getElementById('sceltaUtente');
 let bottone = document.querySelector('.btn');
 let nuovoArray = [];
 
+output = document.getElementById('risultato');
+
 bottone.addEventListener('click', function(){
 
     let numeriElementi = sceltaUtente.value;
@@ -24,7 +26,11 @@ bottone.addEventListener('click', function(){
     for(i = 0; i < numeriElementi ; i++){
     let numeriRandom= getRndInteger(0, 100);
       //console.log(numeriRandom)
-    nuovoArray += numeriRandom; 
+    nuovoArray.push(numeriRandom); 
     }
     console.log(nuovoArray);
+    let ultimiNumeri = nuovoArray.slice(-5);
+    console.log(ultimiNumeri.toString());
+
+    output.innerHTML = `i tuoi numeri sono ${ultimiNumeri}`
 })
