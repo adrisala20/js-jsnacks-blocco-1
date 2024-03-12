@@ -15,12 +15,16 @@ let sceltaUtente = document.getElementById('sceltaUtente');
 
 
 let bottone = document.querySelector('.btn');
+let nuovoArray = [];
 
 bottone.addEventListener('click', function(){
-    let numeriElementi = sceltaUtente.value;
-    
-    console.log(numeriElementi);
-    let numeriRadom= 
-    
 
+    let numeriElementi = sceltaUtente.value;
+    //creo un numero random per il numero scelto dall'utente
+    for(i = 0; i < numeriElementi ; i++){
+    let numeriRandom= getRndInteger(0, 100);
+      //console.log(numeriRandom)
+    nuovoArray += numeriRandom; 
+    }
+    console.log(nuovoArray);
 })
