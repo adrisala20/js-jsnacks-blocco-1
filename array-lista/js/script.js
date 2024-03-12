@@ -10,7 +10,6 @@ Fasi
    - se c'è stampiamo: "Trovato! Devo solo preparare il cocktail."
    - se non lo trovo: "Oh no, devo uscire a comprare il cocomero!"
 */
-
 /* inserisco le variabili */
 let fruttaInFrigo = [
    'banana',
@@ -23,15 +22,15 @@ let fruttaInFrigo = [
    'limone',
    'fragola'
 ];
-console.log(fruttaInFrigo)
+console.log(fruttaInFrigo);
 
-output = document.getElementById('risultato');
+const output = document.getElementById('risultato');
 
 fruttaInFrigo.push('pesca');
+let check = false ;
 
 for (let i = 0; i <fruttaInFrigo.length ; i++){
    
-   let check= false;
    let cerca = 'cocomero';
 
    if(cerca === fruttaInFrigo[i]) {
@@ -39,7 +38,7 @@ for (let i = 0; i <fruttaInFrigo.length ; i++){
    }
 }
 if (check) {
-   output.innerHTML = 'trovato! Devo solo preparare il cocktail'
+   output.innerHTML = 'trovato! Devo solo preparare il cocktail';
 } else {
-   output.innerHTML = 'oh no, devo uscire a compare il cocomero!'
+   output.innerHTML = 'oh no, devo uscire a compare il cocomero!';
 }
