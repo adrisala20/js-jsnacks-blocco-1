@@ -12,5 +12,15 @@ Probabilmente conviene controllare che il numero di elementi della coda non sia 
 /* dichiaro le variabili */
 
 let sceltaUtente = document.getElementById('sceltaUtente');
-let numeriElementi = [ `${sceltaUtente}`
-];
+
+
+let bottone = document.querySelector('.btn');
+
+bottone.addEventListener('click', function(){
+    let numeriElementi = sceltaUtente.value;
+    
+    console.log(numeriElementi);
+    let numeriRadom= 
+    
+
+})
