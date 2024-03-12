@@ -25,15 +25,21 @@ let fruttaInFrigo = [
 ];
 console.log(fruttaInFrigo)
 
-fruttaInFrigo.push('pesca');
+output = document.getElementById('risultato');
 
-trovato= false;
+fruttaInFrigo.push('pesca');
 
 for (let i = 0; i <fruttaInFrigo.length ; i++){
    
+   let check= false;
    let cerca = 'cocomero';
 
    if(cerca === fruttaInFrigo[i]) {
-      trovato = true;
+      check = true;
    }
+}
+if (check) {
+   output.innerHTML = 'trovato! Devo solo preparare il cocktail'
+} else {
+   output.innerHTML = 'oh no, devo uscire a compare il cocomero!'
 }
