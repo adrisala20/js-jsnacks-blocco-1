@@ -23,4 +23,17 @@ let fruttaInFrigo = [
    'limone',
    'fragola'
 ];
+console.log(fruttaInFrigo)
 
+fruttaInFrigo.push('pesca');
+
+trovato= false;
+
+for (let i = 0; i <fruttaInFrigo.length ; i++){
+   
+   let cerca = 'cocomero';
+
+   if(cerca === fruttaInFrigo[i]) {
+      trovato = true;
+   }
+}
